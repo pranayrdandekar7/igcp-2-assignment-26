@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>array-practice</title>
 </head>
+
 <body>
 
     <script>
-        const students =[ 'pranay' ,'saurav','sakshi', 'kunal', 'shriya']
+        const students = ['pranay', 'saurav', 'sakshi', 'kunal', 'shriya']
         console.log(students);
 
-       console.log(`the lenght of array is : `, students.length); 
+        console.log(`the lenght of array is : `, students.length);
 
-        
+
         // push and pop method which insert and delete element from end 
-        
+
         console.log(`before push :`, students);
 
         students.push('amit', 'praful')
@@ -24,59 +26,71 @@
         console.log(`before pop :`, students);
 
         students.pop();
-        console.log(`after pop : `,students);
+        console.log(`after pop : `, students);
 
         //to find index of element use indexof()
 
-      console.log( students.indexOf("amit"));        
-      console.log(students.indexOf("shriya"));
-      console.log(students.indexOf("chetan")) 
-    //   in last case the console print mins value that is given element is not in array list.
+        console.log(students.indexOf("amit"));
+        console.log(students.indexOf("shriya"));
+        console.log(students.indexOf("chetan"))
+        //   in last case the console print mins value that is given element is not in array list.
 
-    // shift and unshift method are used to insert and remove element from start of the array list.
-
-
-    console.log(`before unshift : `, students);
-    students.unshift("charu" ,"amey")
-    console.log(`after unshift :`, students);
-
-    console.log(`before shift `, students);
-    students.shift();
-    console.log(`after shift :`,students);
-
-    // splice method which is used for select index and delete element and we can insert new element there.
-
-    console.log(students);
-    console.log(students.indexOf('kunal'));
-    students.splice(4,2,"sagar");
-    console.log(students);
-
-    students.splice(2,0,"pratik");
-    console.log(students);
-
-    // include method is used to check the given value whether it is present or not in array.
-    
-    console.log(students.includes("pranay"));
-   console.log(students.includes("sakshi"));
-
-   //join method is used to convert array value in string formate .
-
-   const allstudnets =students.join(" # ");
-   console.log(allstudnets);
-
-   //reverse method is used to reverse an array .
-
-   console.log(`before reverse :`,students);
-   students.reverse();
-   console.log(`after resverse : `,students);
-
-   
+        // shift and unshift method are used to insert and remove element from start of the array list.
 
 
-    
+        console.log(`before unshift : `, students);
+        students.unshift("charu", "amey")
+        console.log(`after unshift :`, students);
+
+        console.log(`before shift `, students);
+        students.shift();
+        console.log(`after shift :`, students);
+
+        // splice method which is used for select index and delete element and we can insert new element there.
+
+        console.log(students);
+        console.log(students.indexOf('kunal'));
+        students.splice(4, 2, "sagar");
+        console.log(students);
+
+        students.splice(2, 0, "pratik");
+        console.log(students);
+
+        // include method is used to check the given value whether it is present or not in array.
+
+        console.log(students.includes("pranay"));
+        console.log(students.includes("sakshi"));
+
+        //join method is used to convert array value in string formate .
+
+        const allstudnets = students.join(" # ");
+        console.log(allstudnets);
+
+        //reverse method is used to reverse an array .
+
+        console.log(`before reverse :`, students);
+        students.reverse();
+        console.log(`after resverse : `, students);
 
 
-  
+        //    sort method is used to sort array in ascending order.
+        console.log(`before sort :`, students);
+        console.log(`after sort :`, students.sort());
+        //  we can sort in descending order by using reverse already sort array .
+        console.log(`after reverse sort :`, students.reverse());
+
+        // to check given object is array or not we have to used property Array.is Array...
+       console.log(Array.isArray(students));
+
+        
+
+
+
+
+
+
+
+
 
 
 
@@ -85,6 +99,7 @@
 
 
     </script>
-    
+
 </body>
+
 </html>
